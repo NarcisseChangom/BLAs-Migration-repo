@@ -1,0 +1,46 @@
+\begin{table}[htbp]\centering
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\caption{Heterogenous migration response to BLAs by governance category}
+\begin{tabular}{l*{3}{D{.}{.}{-1}}}
+\hline\hline
+                                   &\multicolumn{1}{c}{Top half}&\multicolumn{1}{c}{Top two terciles}&\multicolumn{1}{c}{Top three quartiles}\\\cmidrule(lr){2-2}\cmidrule(lr){3-3}\cmidrule(lr){4-4}
+                                   &\multicolumn{1}{c}{(1)}         &\multicolumn{1}{c}{(2)}         &\multicolumn{1}{c}{(3)}         \\
+\hline
+Bilateral labor agreement (BLA)    &    1.281\sym{***}&    2.004\sym{***}&    1.979\sym{***}\\
+                                   &  (0.263)         &  (0.457)         &  (0.577)         \\
+BLA x Africa                       &   -1.194\sym{***}&   -1.985\sym{***}&   -2.283\sym{***}\\
+                                   &  (0.325)         &  (0.528)         &  (0.668)         \\
+BLA x Top half                     &   -0.821\sym{***}&                  &                  \\
+                                   &  (0.286)         &                  &                  \\
+BLA x Middle tercile               &                  &   -0.825\sym{*}  &                  \\
+                                   &                  &  (0.497)         &                  \\
+BLA x Top tercile                  &                  &   -1.924\sym{***}&                  \\
+                                   &                  &  (0.469)         &                  \\
+BLA x Third quartile               &                  &                  &   -1.009         \\
+                                   &                  &                  &  (0.639)         \\
+BLA x Second quartile              &                  &                  &   -0.869         \\
+                                   &                  &                  &  (0.609)         \\
+BLA x Fiurth quartile              &                  &                  &   -1.947\sym{***}\\
+                                   &                  &                  &  (0.590)         \\
+BLA x Africa x Top half            &    0.983\sym{***}&                  &                  \\
+                                   &  (0.377)         &                  &                  \\
+BLA x Africa x Middle tercile      &                  &    1.066\sym{*}  &                  \\
+                                   &                  &  (0.579)         &                  \\
+BLA x Africa x Top tercile         &                  &    1.624\sym{**} &                  \\
+                                   &                  &  (0.657)         &                  \\
+BLA x Africa x Third quartile      &                  &                  &    1.684\sym{**} \\
+                                   &                  &                  &  (0.748)         \\
+BLA x Africa x Second quartile     &                  &                  &    1.462\sym{**} \\
+                                   &                  &                  &  (0.714)         \\
+BLA x Africa x First quartile      &                  &                  &    1.869\sym{**} \\
+                                   &                  &                  &  (0.873)         \\
+\hline
+Observations                       &  268,905         &  268,905         &  268,905         \\
+R-sq                               &    0.875         &    0.876         &    0.875         \\
+Origin country x decade FE         &      Yes         &      Yes         &      Yes         \\
+Destination country x decade FE    &      Yes         &      Yes         &      Yes         \\
+Origin x destination countries FE  &      Yes         &      Yes         &      Yes         \\
+\hline\hline
+\multicolumn{4}{l}{\footnotesize Standard errors in parentheses are clustered at the origin-destination level. BLA (dummy) in decade N takes the value 1 if a BLA was signed in the last 10 years and zero otherwise. The dependent variable is the inverse hyperbolic ssine of the number of dyadic migrations in protocols.   For each of the highlighted categories, we consider consider the specification with the most stringent set of fixed effects. \sym{*} \(p<0.05\), \sym{**} \(p<0.01\), \sym{***} \(p<0.001\)}\\
+\end{tabular}
+\end{table}
