@@ -1,0 +1,25 @@
+\begin{table}[htbp]\centering
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\caption{Migration response to BLAs (Benchmark)}
+\begin{tabular}{l*{8}{D{.}{.}{-1}}}
+\toprule
+                    &\multicolumn{4}{c}{Full sample}                                                        &\multicolumn{4}{c}{Regular corridors only (M\_ij>=10)}                                  \\\cmidrule(lr){2-5}\cmidrule(lr){6-9}
+                    &\multicolumn{1}{c}{(1)}         &\multicolumn{1}{c}{(2)}         &\multicolumn{1}{c}{(3)}         &\multicolumn{1}{c}{(4)}         &\multicolumn{1}{c}{(5)}         &\multicolumn{1}{c}{(6)}         &\multicolumn{1}{c}{(7)}         &\multicolumn{1}{c}{(8)}         \\
+\midrule
+BLA\_{ijt} (TWFE)    &       0.569\sym{***}&       0.179\sym{***}&                     &                     &       0.243\sym{***}&       0.158\sym{***}&                     &                     \\
+                    &     (0.090)         &     (0.037)         &                     &                     &     (0.051)         &     (0.039)         &                     &                     \\
+BLA\_{ijt} (ETWFE)   &                     &                     &       1.196         &       0.190         &                     &                     &       0.979         &       0.170         \\
+                    &                     &                     &     (0.095)         &     (0.067)         &                     &                     &     (0.094)         &     (0.068)         \\
+c1                  &                     &                     &            \sym{***}&            \sym{***}&                     &                     &            \sym{***}&            \sym{**} \\
+                    &                     &                     &                     &                     &                     &                     &                     &                     \\
+\midrule
+Observations        &     273,042         &     163,132         &     272,531         &     162,631         &      33,222         &      33,222         &      32,858         &      32,858         \\
+Origin country x decade FE&         Yes         &         Yes         &         Yes         &         Yes         &         Yes         &         Yes         &         Yes         &         Yes         \\
+Destination country x decade FE&         Yes         &         Yes         &         Yes         &         Yes         &         Yes         &         Yes         &         Yes         &         Yes         \\
+Origin x destination countries FE&         Yes         &         Yes         &         Yes         &         Yes         &         Yes         &         Yes         &         Yes         &         Yes         \\
+\bottomrule
+\multicolumn{9}{l}{\footnotesize Standard errors in parentheses}\\
+\multicolumn{9}{l}{\footnotesize The table presents OLS and PPML estimations using three-ways fixed effects (TWFE) and extended three-ways fixed effects (ETWFE) estimators. ETWFE estimator is obtained by aggregating the cohort-time specific treatment effects across cohort to obtain and aggregate treatment effect estimate. The dependent variable is bilateral migration flows, which varies across origin-destination-decade dimension. The full sample contains all the corridors irrespective of whether those are used (presence of migrants) or not. The regular corridors restricts the analysis to corridors with at least 10 migrants. Standards errors in parenthesis are clustered at origin-decade level. \sym{***}, \sym{**}, and \sym{*} indicate the significance at the 1\%, 5\% and 10\% level, respectively. Extended three-ways fixed effects (ETWFE) estimates are obtained using the \emph{STATA} {\fontfamily{qcr}\selectfont jwdid} command built by \cite{stata\_jwdid} from \cite{wooldridge2023simple} and extended to gravity setting by \cite{nagengast2023staggered}.}\\
+\multicolumn{9}{l}{\footnotesize \sym{*} \(p<0.10\), \sym{**} \(p<0.05\), \sym{***} \(p<0.01\)}\\
+\end{tabular}
+\end{table}
