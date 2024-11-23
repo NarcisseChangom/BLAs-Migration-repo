@@ -4,9 +4,6 @@
 *===================================================================================*
             
               Samik Adhikari, Narcisse Cha’ngom,  Heidi Kaila, and Maheshwor Shrestha
-            
-What the project does: This project combines the most comprehensive dataset on bilateral migration stocks, spanning the period from 1960 to 2020 at ten-year intervals, with the most extensive collection of Bilateral Labor Agreements (BLAs) to date. The dataset includes 1,222 agreements signed between countries since World War II, detailing the year of each BLA and the countries involved. Using a triple-difference approach within a gravity model framework enriched with a rich structure of fixed effects, the study investigates whether the signing of a BLA increases migration between country pairs. The findings reveal that signing a BLA, on average, significantly increases migration within the designated corridor, and this effect persists for up to three decades. Further disaggregation of the analysis highlights the following key points: (1) The effects are more pronounced in corridors without pre-existing regular migration flows and for destinations in the Gulf Cooperation Council (GCC) countries. (2) No significant impact is observed for migration involving African countries, particularly those with weak government effectiveness. (3) BLAs result in substantial welfare gains, especially for migrants from Low- and Lower-Middle-Income Countries.
-
 
 
 # 1.	Data on Bilateral Labor Agreements (BLA) and bilateral migration 
