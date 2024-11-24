@@ -8,13 +8,10 @@ The data on bilateral labor agreements (BLAs) come from Chilton and Woda (2022),
 
 To match the migration data format, we transform the BLA data by identifying the country of origin, the country of destination, and aligning each BLA with the corresponding year in the migration data. For instance, a BLA signed between 1970 and 1979 is assigned to t=1980 in the migration dataset. For consistency, we classify the country with the lower GDP per capita as the "origin" country and the other as the "destination" country. Origin-destination-year cells without a recorded BLA are assumed to have no agreement in place.
 
-The combined data is provided with this repository. Users may check out the following sources for the original data:  
-
-Bilateral Labor Agreements data 1945-2020 available at: https://dataverse.harvard.edu/dataverse/BLA
-            
-Bilateral Migration data 1960-2000 available at: https://databank.worldbank.org/source/global-bilateral-migration 
-            
-Bilateral Migration data 2010-2020 available at: https://www.un.org/development/desa/pd/content/international-migration-1 
+The combined data used for analysis in the paper is provided with this repository. Users may check out the following sources for the original data:  
+- Bilateral Labor Agreements data 1945-2020 available at: https://dataverse.harvard.edu/dataverse/BLA
+- Bilateral Migration data 1960-2000 available at: https://databank.worldbank.org/source/global-bilateral-migration
+- Bilateral Migration data 2010-2020 available at: https://www.un.org/development/desa/pd/content/international-migration-1 
 
 
 ## 2.	Instructions for Use
