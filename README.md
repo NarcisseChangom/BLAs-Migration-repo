@@ -43,7 +43,7 @@ Bilateral Migration data 2010-2020 available at: https://www.un.org/development/
   - “Heterogeneity_robust_DiD.do” to: Create Table C.1, Figure C.1, Figure C.2, Figure C.3 (panels Figure_C3A, Figure_C3B, Figure_C3C, and Figure_C3D)
   - “welfare calculations.do” to produce welfare numbers reported in the section 5 of the paper. 
 
-# 5.	Runtime 
+## 5.	Runtime 
   **Machine details**: 
   
   Processor: 12th Gen Intel(R) Core (TM) i5-1245U   1.60 GHz
