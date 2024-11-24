@@ -20,13 +20,18 @@ To match the migration data format, we transform the BLA data by identifying the
 
 # 2.	Instructions for Use
   Download the entire content of this package “Replication File BLA-Migration” to a location in your computer. The package contains four folders: 
+  
     -	DATA: this folder contains the dataset used throughout the paper (BLA_Migration_data.dta)
+ 
     -	DOFILES: this folder contains seven .do files (program to run) and one excel sheet that accompany welfare calculations reported in section five of the paper.
+    
     -	FIG: this folder will contain after the replication of the code the nine figures of the results section (main text + appendix) named accordingly.
+    
     -	REGOUT: this folder will contain 10 tables reported in the result section of the paper (main text + appendix).
+    
   
 # 3.	Preparation
-    a.	Ensure all the user written Stata Packages needed for the analysis are installed and are up to date.
+    a.	Ensure all the user written Stata Packages needed for the analysis are installed and are up to date (file "master_file.do" installs all user-written commands. You can uncomment them if you already have the necessary commands). 
     b.	Ensure that all directories are consistently specified.
 
 # 4.	Execution
