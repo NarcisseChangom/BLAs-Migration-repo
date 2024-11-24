@@ -44,12 +44,18 @@ To match the migration data format, we transform the BLA data by identifying the
       b.5.	Run program “Heterogeneity_robust_DiD.do” to: Create Table C.1, Figure C.1, Figure C.2, Figure C.3 (panels Figure_C3A, Figure_C3B, Figure_C3C, and Figure_C3D)
       b.6.	Run program “welfare calculations.do” to produce welfare numbers reported in the section 5 of the paper. 
 
-# 5.	Characteristics of the computer used and runtime. 
-  Processor	12th Gen Intel(R) Core (TM) i5-1245U   1.60 GHz
-  Installed RAM	16.0 GB  
-  System type	64-bit operating system, x64-based processor
+# 5.	Runtime 
+  **Machine details**: 
+  
+  Processor: 12th Gen Intel(R) Core (TM) i5-1245U   1.60 GHz
+  
+  Installed RAM: 16.0 GB  
+  
+  System type: 64-bit operating system, x64-based processor
 
-# 6.	Stata version: STATA MP.18.0
-Time taken to run the entire code: the program elapsed time is 4 minutes 21 seconds.
+  **Software**: 
+  STATA MP 18.0
+
+  **Runtime**: 4 minutes 21 seconds.
 
 
