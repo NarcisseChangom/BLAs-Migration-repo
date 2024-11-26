@@ -1,7 +1,5 @@
-
-		
 *==============================================================================*
-* 			Table 01 & B2 - Structure of migration and BLAs 			   	           *
+* 			Table 1 & B.1 - Structure of migration and BLAs 			   	           *
 *==============================================================================*
 g regular = (minmig>9)
 g mpos = (mig>0)
@@ -46,7 +44,6 @@ end
 *************
 * Table 1
 ************* 
-tempname texfile
 file open mytexfile using "${REGOUT}\Descs.tex", write replace
 file write mytexfile "\begin{tabular}{lccccc}" _n
 file write mytexfile "\hline \hline" _n
@@ -78,11 +75,10 @@ file write mytexfile "\hline \hline" _n
 file write mytexfile "\end{tabular}" _n
 file close mytexfile 
 
+
 **************
 * Table B.1
 **************
-
-tempname texfile
 file open mytexfile using "${REGOUT}\Descriptives_decadal.tex", write replace
 file write mytexfile "\begin{tabular}{lccccc}" _n
 file write mytexfile "\hline \hline" _n
@@ -118,4 +114,3 @@ forval y = 1960(10)2020{
 file write mytexfile "\hline \hline" _n
 file write mytexfile "\end{tabular}" _n
 file close mytexfile 
-
