@@ -47,7 +47,6 @@ end
 *************
 * Table 1
 ************* 
-tempname texfile
 file open mytexfile using "${REGOUT}\Descs.tex", write replace
 file write mytexfile "\begin{tabular}{lccccc}" _n
 file write mytexfile "\hline \hline" _n
@@ -83,7 +82,6 @@ file close mytexfile
 * Table B.1
 **************
 
-tempname texfile
 file open mytexfile using "${REGOUT}\Descriptives_decadal.tex", write replace
 file write mytexfile "\begin{tabular}{lccccc}" _n
 file write mytexfile "\hline \hline" _n
