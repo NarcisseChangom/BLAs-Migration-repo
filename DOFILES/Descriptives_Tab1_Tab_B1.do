@@ -39,7 +39,6 @@ qui forval i = 1/5{
 	local x`i' = string(round(r(`stat'), 0.001), "%9.`digit'f")
 }
 local lbl: var l `varlist'
-*noi di "`lbl': `x1'; `x2'; `x3'; `x4'; `x5'"
 file write `handle' " `lbl' & `x1'& `x2' & `x3' & `x4' & `x5' \\" _n
 end 
 
