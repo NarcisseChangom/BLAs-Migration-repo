@@ -21,9 +21,9 @@ lab var mpos "Share of non empty corridors"
 lab var regular "Share of regular corrdiors"
 lab var BLA "Share of corridors with BLA"
 lab var BLAreg "Share of regular corridors with BLA"
-lab var mig2020 "Number of migrants"
-lab var mig2020_reg "Number of migrants in regular corridors"
-lab var mig2020_BLA "Number of migrants in corridors with BLA"
+lab var mig2020 "All corridors"
+lab var mig2020_reg "Regular corridors"
+lab var mig2020_BLA "Corridors with ever a BLA"
 
 gen sample1 = 1
 gen sample2 = AFR_o==1
@@ -47,6 +47,7 @@ end
 *************
 * Table 1
 ************* 
+tempname texfile
 file open mytexfile using "${REGOUT}\Descs.tex", write replace
 file write mytexfile "\begin{tabular}{lccccc}" _n
 file write mytexfile "\hline \hline" _n
@@ -82,6 +83,7 @@ file close mytexfile
 * Table B.1
 **************
 
+tempname texfile
 file open mytexfile using "${REGOUT}\Descriptives_decadal.tex", write replace
 file write mytexfile "\begin{tabular}{lccccc}" _n
 file write mytexfile "\hline \hline" _n
