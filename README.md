@@ -34,6 +34,7 @@ The combined data used for analysis in the paper is provided with this repositor
 * Change the directory path in line 23 of “Master_file.do” to be the corresponding location in your computer where you store the “Replication File BLA-Migration” folder.
 * Run the “Master_file.do” in Stata that jointly takes care of everything. The file will in turn call the following do-files:
   - “Header.do” to: Load the dataset and create high dimensional fixed effects and macros.
+  -  “Descriptives_Tab1_Tab_B1.do” to: Create Table 1 and Table B.1.
   - “Main_analysis.do” to: Create Table 2, Table B.2, Table B.3 and Table 3.
   - “Heterogeneity_analysis.do” to: Create Table 4, Table 5, Table B.4, Table B.5, and Table B.6.
   - “Event_study.do” to: Create Figure 1 and Figure 2 (panels Figure_2A and Figure_2B).
@@ -52,6 +53,6 @@ The combined data used for analysis in the paper is provided with this repositor
   **Software**: 
   STATA MP 18.0
 
-  **Runtime**: 4 minutes 21 seconds.
+  **Runtime**: 4 minutes 24 seconds.
 
 
