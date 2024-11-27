@@ -13,7 +13,7 @@ The combined data used for analysis in the paper is provided with this repositor
 - Bilateral Migration data 1960-2000 available at: https://databank.worldbank.org/source/global-bilateral-migration
 - Bilateral Migration data 2010-2020 available at: https://www.un.org/development/desa/pd/content/international-migration-1 
 
-
+   
 ## 2.	Instructions for Use
   Download the entire content of this package “Replication File BLA-Migration” to a location in your computer. The package contains four folders: 
   
