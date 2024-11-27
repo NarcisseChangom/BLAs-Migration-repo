@@ -1,37 +1,6 @@
-
-
 *==============================================================================*
 * 			BLAs and Migration: Does signing a BLA affect migration?           *
 *==============================================================================*
-
-clear all
-  
-global UPI = c(username)
-
-*Set directory
-gl PATH "C:\Users\\${UPI}\OneDrive - WBG\Replication File BLA-Migration"
-cd "$PATH"
-
-
-* files Locations
-gl CODE			   		"$PATH\DOFILES"
-gl DATA      			"$PATH\DATA"
-gl REGOUT 			  	"$PATH\REGOUT"
-gl FIG 					"$PATH\FIG"
-
-/* Required package */
-/*
-ssc install estout, replace
-which estout 
-which esttab
-which estpost
-ado update, update
-ssc install jwdid, replace 
-ssc install hdfe, replace
-ssc install honestdid, replace 
-honestdid _plugin_check
-*/
-
 
 use "$DATA\BLA_Migration_data", clear 
 drop od ot dt 
