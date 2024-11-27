@@ -43,7 +43,7 @@ The combined data used for analysis in the paper is provided with this repositor
 
 
 ## 5.	Output 
-* Tables
+* 5.1 Tables
   - Table 1: "REGOUT/Descs.tex"
   - Table 2: "REGOUT/Table_2.tex"
   - Table 3: "REGOUT/Table_3.tex"
@@ -57,7 +57,7 @@ The combined data used for analysis in the paper is provided with this repositor
   - Table B.6: "REGOUT/Table_B6.tex"
   - Table C.1: "REGOUT/Table_C1.tex"
  
-* Figures
+* 5.2 Figures
     - Figure 1: "FIG/Figure_1.png"
     - Figure 2: "FIG/Figure_2A.png"; "FIG/Figure_2B.png"
     - Figure C.1: "FIG/Figure_C1.png"
