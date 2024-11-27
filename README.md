@@ -34,14 +34,37 @@ The combined data used for analysis in the paper is provided with this repositor
 * Change the directory path in line 23 of “Master_file.do” to be the corresponding location in your computer where you store the “Replication File BLA-Migration” folder.
 * Run the “Master_file.do” in Stata that jointly takes care of everything. The file will in turn call the following do-files:
   - “Header.do” to: Load the dataset and create high dimensional fixed effects and macros.
-  -  “Descriptives_Tab1_Tab_B1.do” to: Create Table 1 and Table B.1.
+  -  “desc_tab1_tabB1.do” to: Create Table 1 and Table B.1.
   - “Main_analysis.do” to: Create Table 2, Table B.2, Table B.3 and Table 3.
   - “Heterogeneity_analysis.do” to: Create Table 4, Table 5, Table B.4, Table B.5, and Table B.6.
   - “Event_study.do” to: Create Figure 1 and Figure 2 (panels Figure_2A and Figure_2B).
   - “Heterogeneity_robust_DiD.do” to: Create Table C.1, Figure C.1, Figure C.2, Figure C.3 (panels Figure_C3A, Figure_C3B, Figure_C3C, and Figure_C3D)
   - “welfare calculations.do” to produce welfare numbers reported in the section 5 of the paper. 
 
-## 5.	Runtime 
+
+## 5.	Output 
+* Tables
+  - Table 1: "REGOUT/Descs.tex"
+  - Table 2: "REGOUT/Table_2.tex"
+  - Table 3: "REGOUT/Table_3.tex"
+  - Table 4: "REGOUT/Table_4.tex"
+  - Table 5: "REGOUT/Table_5.tex"
+  - Table B.1: "REGOUT/Descriptives_decadal.tex"
+  - Table B.2: "REGOUT/Table_B2.tex"
+  - Table B.3: "REGOUT/Table_B3.tex"
+  - Table B.4: "REGOUT/Table_B4.tex"
+  - Table B.5: "REGOUT/Table_B5.tex"
+  - Table B.6: "REGOUT/Table_B6.tex"
+  - Table C.1: "REGOUT/Table_C1.tex"
+ 
+  * Figures
+    - Figure 1: "FIG/Figure_1.png"
+    - Figure 2: "FIG/Figure_2A.png"; "FIG/Figure_2B.png"
+    - Figure C.1: "FIG/Figure_C1.png"
+    - Figure C.2: "FIG/Figure_C2.png"
+    - Figure C.3: "FIG/Figure_C3A.png"; "FIG/Figure_C3B.png"; "FIG/Figure_C3C.png"; "FIG/Figure_C3D.png"
+  
+## 6.	Runtime 
   **Machine details**: 
   
   Processor: 12th Gen Intel(R) Core (TM) i5-1245U   1.60 GHz
