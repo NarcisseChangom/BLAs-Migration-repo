@@ -57,7 +57,7 @@ The combined data used for analysis in the paper is provided with this repositor
   - Table B.6: "REGOUT/Table_B6.tex"
   - Table C.1: "REGOUT/Table_C1.tex"
  
-  * Figures
+* Figures
     - Figure 1: "FIG/Figure_1.png"
     - Figure 2: "FIG/Figure_2A.png"; "FIG/Figure_2B.png"
     - Figure C.1: "FIG/Figure_C1.png"
