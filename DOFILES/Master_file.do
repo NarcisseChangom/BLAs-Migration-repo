@@ -19,7 +19,7 @@ clear all
 global UPI = c(username)
 
 *Set directory
-gl PATH "C:\Users\\${UPI}\OneDrive - WBG\Replication File BLA-Migration"
+gl PATH "C:\Users\WB352657\OneDrive - WBG\Research\BLA migration\replication PRWP"
 cd "$PATH"
 
 
@@ -29,47 +29,24 @@ gl DATA      			"$PATH\DATA"
 gl REGOUT 			  	"$PATH\REGOUT"
 gl FIG 					"$PATH\FIG"
 
+
 /*==========================================
 			Required packages
- =========================================== 
- // Uncomment this section and run if you do not have all the required user written commands
-ssc install estout, replace
-which estout 
-which esttab
-which estpost
-ado update, update
-ssc install reghdfe, replace 
-ssc install ivreghdfe, replace 
-ssc install ppmlhdfe, replace 
-ssc install jwdid, replace 
-ssc install hdfe, replace
-ssc install panelview, replace 
+ =========================================== */
 
-*HK added
-ssc install egenmore, replace
-ssc install ftools, replace
-ssc install ivreg2, replace  // NC
-ssc install ivreghdfe, replace
-======================================*/
+local pkg "estout esttab estpost reghdfe ivreghdfe ppmlhdfe jwdid hdfe ftools ivreg2 ivreghdfe etime coefplot wbopendata"
+foreach pk of local pkg{
+	cap which `pk'
+	if _rc !=0 ssc install `pk'
+}
 
-ado
-ado uninstall [10] // this remove the initial ivreghdfe which is installed on my computer but is not up to date
-
-
-
-cap ado uninstall ivreghdfe
-net install ivreghdfe, from(https://raw.githubusercontent.com/sergiocorreia/ivreghdfe/master/src/)
-ssc install etime, replace 
-*HK added
-ssc install coefplot, replace 
-ssc install wbopendata, replace 
 *------------------------------------------------------------------------------*
 *				1.0 - Load the data and create necessary indicators and groups *
 *------------------------------------------------------------------------------*
 etime, start 
 		run "$CODE\Header.do" // Load the dataset and create high dimensional fixed effects and macros 
 	
-/*------------------------------------------------------------------------------*
+*------------------------------------------------------------------------------*
 *						2.0 - Main analysis (Benchmark)		        		   *
 *------------------------------------------------------------------------------*
 
