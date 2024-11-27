@@ -41,11 +41,23 @@ foreach pk of local pkg{
 }
 
 *------------------------------------------------------------------------------*
-*				1.0 - Load the data and create necessary indicators and groups *
+*				0.0 - Load the data and create necessary indicators and groups *
 *------------------------------------------------------------------------------*
 etime, start 
 		run "$CODE\Header.do" // Load the dataset and create high dimensional fixed effects and macros 
 	
+*------------------------------------------------------------------------------*
+*						1.0 - Main analysis (Benchmark)		        		   *
+*------------------------------------------------------------------------------*
+
+		do "$CODE\Descriptives_Tab1_Tab_B1.do"
+
+/*========= Main_analysis.do creates:
+
+	1.1- Table 1
+	1.2- Tables B.1
+ ==========*/		
+
 *------------------------------------------------------------------------------*
 *						2.0 - Main analysis (Benchmark)		        		   *
 *------------------------------------------------------------------------------*
