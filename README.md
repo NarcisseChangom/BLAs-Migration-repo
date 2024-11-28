@@ -31,7 +31,7 @@ The combined data used for analysis in the paper is provided with this repositor
 * Ensure that all directories are consistently specified.
 
 ## 4.	Execution
-* Change the directory path in line 23 of “Master_file.do” to be the corresponding location in your computer where you store the “Replication File BLA-Migration” folder.
+* Change the directory path in line 22 of “Master_file.do” to be the corresponding location in your computer where you store the “Replication File BLA-Migration” folder.
 * Run the “Master_file.do” in Stata that jointly takes care of everything. The file will in turn call the following do-files:
   - “Header.do” to: Load the dataset and create high dimensional fixed effects and macros.
   - “Descriptives_Tab1_Tab_B1.do.do” to: Create Table 1 and Table B.1.
