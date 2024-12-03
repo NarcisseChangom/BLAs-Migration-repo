@@ -44,7 +44,7 @@ tsset od year, delta(10)
 egen wanted = max(dum_BLAs_10 == 1), by(od) // flag corridors with BLAs 
 keep if wanted ==1 // keep only corridors with BLAs 
 
-keep o_iso3 d_iso3 devcat devcatd AFR_o AFR_d od ot dt mig dum_BLAs_10 year devcat_o devcat_d d_region gee* notB3 /*d_logpop d_loggdp d_q_GDP d_region*/
+keep o_iso3 d_iso3 devcat devcatd AFR_o od ot dt mig dum_BLAs_10 year devcat_o devcat_d d_region gee* notB3 /*d_logpop d_loggdp d_q_GDP d_region*/
  
 egen count = sum(dum_BLAs_10), by(od)
 egen blarank = rank(year) if dum_BLAs_10==1, by(od)
