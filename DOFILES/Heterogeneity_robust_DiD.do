@@ -95,7 +95,7 @@ restore
 * 			Data formatting   	          
 *==================== 
 
-keep o_iso3 d_iso3 devcat devcatd AFR_o od ot dt mig dum_BLAs_10 year devcat_o devcat_d d_region 
+keep o_iso3 d_iso3 devcat devcatd AFR_o od ot dt mig dum_BLAs_10 year d_region 
 egen count = sum(dum_BLAs_10), by(od)
 egen blarank = rank(year) if dum_BLAs_10==1, by(od)
 
