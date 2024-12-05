@@ -11,7 +11,7 @@
 * Note: since the GDP data in WDI Online database changes for recent years, the numbers may not match the one used in the paper. 
 **************
 wbopendata, indicator("NY.GDP.PCAP.CD") clear // Data downloaded on Sep 16, 2024 
-gen llmic = devcat==1  
+gen llmic = inlist(incomelevel,"LIC","LMIC")  
 gen ssa = inlist(adminregion, "SSA")
 gen gcc = inlist(countrycode, "ARE", "BHR", "KWT", "OMN", "QAT", "SAU" )
 
