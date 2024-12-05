@@ -3,7 +3,6 @@
 *				1.0 - Load the data and create necessary indicators and groups *
 *------------------------------------------------------------------------------*
 use "$DATA\BLA_Migration_data", clear 
-		drop od ot dt 
 		lab var dum_BLAs_10 "Bilateral labor agreement (BLA)"
 
 
