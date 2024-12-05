@@ -4,7 +4,7 @@ _Samik Adhikari, Narcisse Cha’ngom,  Heidi Kaila,_ and _Maheshwor Shrestha_
 ## 1.	Data on Bilateral Labor Agreements (BLA) and bilateral migration 
 This paper uses data on bilateral migration stocks, covering the period from 1960 to 2020 in ten-year intervals. The data on bilateral labor agreements (BLAs) come from Chilton and Woda (2022), comprising 1,222 agreements signed between countries since World War II including information on the year of each BLA and the countries involved. 
 
-## Cleaning Process (BLAs data) 
+## Cleaning Process BLAs data 
 The raw dataset, "BLAs_Formation_Data," is cleaned in four steps. 
  - First, ISO3 codes are assigned to origin and destination countries following World Bank standards.
  - Second, country names are harmonized to reflect historical changes, such as the breakup of Yugoslavia (now Serbia, Montenegro, Croatia, Slovenia, North Macedonia, and Bosnia and Herzegovina) and Czechoslovakia (now the Czech Republic and Slovakia).
@@ -12,8 +12,8 @@ The raw dataset, "BLAs_Formation_Data," is cleaned in four steps.
  - Fourth, To match the migration data format, we transform the BLA data by identifying the country of origin, the country of destination, and aligning each BLA with the corresponding year in the migration data. For instance, a BLA signed between 1970 and 1979 is assigned to t=1980 in the migration dataset.
 For consistency, we classify the country with the lower GDP per capita as the "origin" country and the other as the "destination" country. Origin-destination-year cells without a recorded BLA are assumed to have no agreement in place.
 
-## Clenaning process migration data 
-Migration stock data for 1960, 1970, 1980, 1990, and 2000 are sourced from the World Bank (2022), while data for 2010 and 2020 are drawn from UNDESA (2020), which employs a similar methodology. They use information collated from censuses and surveys at destination and origin countries to construct a matrix of bilateral migration stock data from each of the origin countries to each potential destination country.
+## Clenaning Process migration data 
+Migration stock data for 1960, 1970, 1980, 1990, and 2000 are sourced from the World Bank (2022), while data for 2010 and 2020 are drawn from UNDESA (2020), which employs a similar methodology. They use information collated from censuses and surveys at destination and origin countries to construct a matrix of bilateral migration stock data from each of the origin countries to each potential destination country. 
 
 
 The combined data used for analysis in the paper is provided with this repository. Users may check out the following sources for the original data:  
@@ -41,6 +41,7 @@ The combined data used for analysis in the paper is provided with this repositor
 ## 4.	Execution
 * Change the directory path in line 22 of “Master_file.do” to be the corresponding location in your computer where you store the “Replication File BLA-Migration” folder.
 * Run the “Master_file.do” in Stata that jointly takes care of everything. The file will in turn call the following do-files:
+  - “Appendi_A.do” to: creates Figures in appendix A (Figure A.1-A6) from rawdata i) "BLAs_Formation_Data" and b) "BLAs_Coding_Data"
   - “Header.do” to: Load the dataset and create high dimensional fixed effects and macros.
   - “Descriptives_Tab1_Tab_B1.do.do” to: Create Table 1 and Table B.1.
   - “Main_analysis.do” to: Create Table 2, Table B.2, Table B.3 and Table 3.
@@ -68,6 +69,12 @@ The combined data used for analysis in the paper is provided with this repositor
 * 5.2 Figures
     - Figure 1: "FIG/Figure_1.png"
     - Figure 2: "FIG/Figure_2A.png"; "FIG/Figure_2B.png"
+    - Figure A.1 : "FIG/Figure_A1.png"
+    - Figure A.2 : "FIG/Figure_A2.png"
+    - Figure A.3 : "FIG/Figure_A3.png"
+    - Figure A.4 : "FIG/Figure_A4.png"
+    - Figure A.5 : "FIG/Figure_A5.png"
+    - Figure A.6 : "FIG/Figure_A6.png"
     - Figure C.1: "FIG/Figure_C1.png"
     - Figure C.2: "FIG/Figure_C2.png"
     - Figure C.3: "FIG/Figure_C3A.png"; "FIG/Figure_C3B.png"; "FIG/Figure_C3C.png"; "FIG/Figure_C3D.png"
