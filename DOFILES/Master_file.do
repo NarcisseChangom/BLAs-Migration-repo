@@ -40,10 +40,26 @@ foreach pk of local pkg{
 	if _rc !=0 ssc install `pk'
 }
 
+
+etime, start
+
 *------------------------------------------------------------------------------*
-*				0.0 - Load the data and create necessary indicators and groups *
+*				0.a - Figures A-1 to A-6 of Appendix A         *
 *------------------------------------------------------------------------------*
-etime, start 
+		run "$CODE\Appendix_A.do" // This exercise is done at the initial stage because it directly builds on rawdata prior formating 
+/*========= Appendix_A.do creates:
+
+	a.1- Figure A.1 
+	a.2- Figure A.2
+	a.3- Figure A.3
+	a.4- Figure A.4
+	a.5- Figure A.5
+	a.6- Figure A.6
+ ==========*/
+*------------------------------------------------------------------------------*
+*				0.b - Load the data and create necessary indicators and groups *
+*------------------------------------------------------------------------------*
+ 
 		run "$CODE\Header.do" // Load the dataset and create high dimensional fixed effects and macros 
 	
 *------------------------------------------------------------------------------*
