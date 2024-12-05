@@ -11,7 +11,7 @@
 * Note: since the GDP data in WDI Online database changes for recent years, the numbers may not match the one used in the paper. 
 **************
 wbopendata, indicator("NY.GDP.PCAP.CD") clear // Data downloaded on Sep 16, 2024 
-gen llmic = inlist(incomelevel, "LIC", "LMC")
+gen llmic = devcat==1  
 gen ssa = inlist(adminregion, "SSA")
 gen gcc = inlist(countrycode, "ARE", "BHR", "KWT", "OMN", "QAT", "SAU" )
 
@@ -44,7 +44,7 @@ lab define mzero 1 "Non empty corridors" 0 "Empty corridors"
 lab values mzero mzero 
 replace devcat = 2 if devcat==.
 
-gen llmic = inlist(o_incomelevel, "LIC", "LMC")
+gen llmic = devcat == 1
 
 summ mig if year==2020
 summ mig if year==2020 & GCC_d==1
