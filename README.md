@@ -45,7 +45,7 @@ The combined data used for analysis in the paper is provided with this repositor
 
 ### iii.	Execute the "Master_file.do"
 * Run the “Master_file.do” in Stata that will replicate all tables and figures in the paper. The file will in turn call the following do-files:
-  - “Appendix_A.do” to: creates Figures in appendix A (Figure A.1-A.6) from rawdata i) "BLAs_Formation_Data" and b) "BLAs_Coding_Data"
+  - “Appendix_A.do” to: creates Figures in appendix A (Figure A.1-A.6) from rawdata a) "BLAs_Formation_Data" and b) "BLAs_Coding_Data"
   - “Header.do” to: Load the analysis dataset and create high dimensional fixed effects and macros.
   - “Descriptives_Tab1_Tab_B1.do.do” to: Create Table 1 and Table B.1.
   - “Main_analysis.do” to: Create Table 2, Table B.2, Table B.3 and Table 3.
