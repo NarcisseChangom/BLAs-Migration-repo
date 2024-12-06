@@ -9,7 +9,7 @@ The raw dataset, "BLAs_Formation_Data," is cleaned in four steps.
  - First, ISO3 codes are assigned to origin and destination countries following World Bank standards.
  - Second, country names are harmonized to reflect historical changes, such as the breakup of Yugoslavia (now Serbia, Montenegro, Croatia, Slovenia, North Macedonia, and Bosnia and Herzegovina) and Czechoslovakia (now the Czech Republic and Slovakia).
  - Third, overseas territories are recoded as their metropolitan counterparts for consistency with migration data (e.g., Guam and Puerto Rico as the USA, Greenland as Denmark, and Guadeloupe as France). Territories linked to the Netherlands, the UK, and New Zealand are similarly adjusted.
- - The coding norms used for this process is identical to what was used for the Bilateral Migration Matrix data (see [Ozden et al, 2011](https://academic.oup.com/wber/article-abstract/25/1/12/1678242)).
+ - The coding norms used for this process is identical to what was used for the Bilateral Migration Matrix data (see [Ozden et al, 2011](https://academic.oup.com/wber/article-abstract/25/1/12/1678242) for details on this).
  - Fourth, to match the migration data format, we transform the BLA data by identifying the country of origin, the country of destination, and aligning each BLA with the corresponding year in the migration data. For instance, a BLA signed between 1970 and 1979 is assigned to t=1980 in the migration dataset.
 For consistency, we classify the country with the lower GDP per capita as the "origin" country and the other as the "destination" country. Origin-destination-year cells without a recorded BLA are assumed to have no agreement in place.
 
