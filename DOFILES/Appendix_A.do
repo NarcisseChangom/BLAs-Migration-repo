@@ -326,14 +326,6 @@ graph export "$FIG\Figure_A2.png", replace
 restore 
 
 preserve /* Dynamic by region (origin) */
-/*
-merge n:1 d_iso3 using "$cleaned\d_reg"
-keep if _m==3 
-drop _m 
-merge n:1 o_iso3 using "$cleaned\o_reg"
-keep if _m==3 
-drop _m 
-*/
 replace d_region = "GCC" if inlist(d_iso3,"BHR","KWT","OMN","QAT","SAU","ARE")
 replace d_region = "EAP" if d_region == "EAS"
 replace d_region = "ECA" if d_region == "ECS"
