@@ -1,7 +1,7 @@
 # Replication package for "Do bilateral labor agreements increase migration? Global evidence from 1960 to 2020"
 _Samik Adhikari, Narcisse Cha’ngom,  Heidi Kaila,_ and _Maheshwor Shrestha_
 
-## 1.	Data on Bilateral Labor Agreements (BLA) and bilateral migration 
+## 1.	Data 
 This paper uses data on bilateral migration stocks, covering the period from 1960 to 2020 in ten-year intervals. The data on bilateral labor agreements (BLAs) come from Chilton and Woda (2022), comprising 1,222 agreements signed between countries since World War II including information on the year of each BLA and the countries involved. 
 
 ### Data cleaning process for BLA data 
@@ -17,7 +17,7 @@ For consistency, we classify the country with the lower GDP per capita as the "o
 Migration stock data for 1960, 1970, 1980, 1990, and 2000 are sourced from the World Bank (2022), while data for 2010 and 2020 are drawn from UNDESA (2020), which employs a similar methodology. They use information collated from censuses and surveys at destination and origin countries to construct a matrix of bilateral migration stock data from each of the origin countries to each potential destination country. 
 
 
-The combined data used for analysis in the paper is provided with this repository. Users may check out the following sources for the original data:  
+The combined data used for analysis in the paper is provided with [this repository](https://github.com/NarcisseChangom/BLAs-Migration-repo/tree/main/DATA). Original data are available from the following sources:  
 - Bilateral Labor Agreements data 1945-2020 available at: https://dataverse.harvard.edu/dataverse/BLA
 - Bilateral Migration data 1960-2000 available at: https://databank.worldbank.org/source/global-bilateral-migration
 - Bilateral Migration data 2010-2020 available at: https://www.un.org/development/desa/pd/content/international-migration-1 
