@@ -4,16 +4,16 @@ _Samik Adhikari, Narcisse Cha’ngom,  Heidi Kaila,_ and _Maheshwor Shrestha_
 ## 1.	Data on Bilateral Labor Agreements (BLA) and bilateral migration 
 This paper uses data on bilateral migration stocks, covering the period from 1960 to 2020 in ten-year intervals. The data on bilateral labor agreements (BLAs) come from Chilton and Woda (2022), comprising 1,222 agreements signed between countries since World War II including information on the year of each BLA and the countries involved. 
 
-### Cleaning process for BLA data 
+### Data cleaning process for BLA data 
 The raw dataset, "BLAs_Formation_Data," is cleaned in four steps. 
  - First, ISO3 codes are assigned to origin and destination countries following World Bank standards.
  - Second, country names are harmonized to reflect historical changes, such as the breakup of Yugoslavia (now Serbia, Montenegro, Croatia, Slovenia, North Macedonia, and Bosnia and Herzegovina) and Czechoslovakia (now the Czech Republic and Slovakia).
  - Third, overseas territories are recoded as their metropolitan counterparts for consistency with migration data (e.g., Guam and Puerto Rico as the USA, Greenland as Denmark, and Guadeloupe as France). Territories linked to the Netherlands, the UK, and New Zealand are similarly adjusted.
- - The coding norms used for this process is identical to what was used for the Bilateral Migration Matrix data (see [Ozden et al, 2011](https://academic.oup.com/wber/article-abstract/25/1/12/1678242) for details on this).
+ - The coding norms used for this process is identical to what was used for the Bilateral Migration data (see [Ozden et al, 2011](https://academic.oup.com/wber/article-abstract/25/1/12/1678242) for details on this).
  - Fourth, to match the migration data format, we transform the BLA data by identifying the country of origin, the country of destination, and aligning each BLA with the corresponding year in the migration data. For instance, a BLA signed between 1970 and 1979 is assigned to t=1980 in the migration dataset.
 For consistency, we classify the country with the lower GDP per capita as the "origin" country and the other as the "destination" country. Origin-destination-year cells without a recorded BLA are assumed to have no agreement in place.
 
-### Clenaning process for migration data 
+### Data clenaning process for migration data 
 Migration stock data for 1960, 1970, 1980, 1990, and 2000 are sourced from the World Bank (2022), while data for 2010 and 2020 are drawn from UNDESA (2020), which employs a similar methodology. They use information collated from censuses and surveys at destination and origin countries to construct a matrix of bilateral migration stock data from each of the origin countries to each potential destination country. 
 
 
