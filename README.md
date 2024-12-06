@@ -84,7 +84,7 @@ The combined data used for analysis in the paper is provided with this repositor
     - Figure C.3: "FIG/Figure_C3A.png"; "FIG/Figure_C3B.png"; "FIG/Figure_C3C.png"; "FIG/Figure_C3D.png"
  
 * 3.3 Welfare calculations in Section 5
-  - The excel file provided "welfare calculations.xlsx" under "DOFILES" generate the relevant welfare numbers used in this section. The excel sheet uses the results of the regressions and the descriptive statistics produced by "welfare calculations.do" for the calculations. The regression results and descriptive statistics are manually copied into the relevant cells in the excel sheets.
+  - The excel file provided "welfare calculations.xlsx" under the folder "DOFILES" generate the relevant welfare numbers used in section 5 of the paper. The excel sheet uses the results of the regressions and the descriptive statistics produced by "welfare calculations.do" for the calculations. The regression results and descriptive statistics are manually copied into the relevant cells in the excel sheets.
    
   
 ## 4.	Runtime 
