@@ -129,6 +129,6 @@ etime, start
 *						6.0 - Welfare calculations				     		   *
 *------------------------------------------------------------------------------*
 
-		run "$CODE\welfare calculations.do" // this code performs welfare calculations presented in Section 5 of the paper and store on the excel file "welfare calculations.xlsx"
+		run "$CODE\welfare calculations.do" // this code produces the descriptives statistics needed to perform the welfare calculations presented in Section 5 of the paper. These results should be manually put in the excel file "welfare calculations.xlsx" to perform the welfare calculations
 		
 etime // display the time duration of the program 
