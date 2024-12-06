@@ -99,6 +99,6 @@ The combined data used for analysis in the paper is provided with this repositor
   **Software**: 
   STATA MP 18.0
 
-  **Runtime**: 4 minutes 24 seconds.
+  **Runtime**: 8 minutes 47 seconds.
 
 
