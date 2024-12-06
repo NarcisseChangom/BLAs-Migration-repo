@@ -11,7 +11,7 @@ We follow the data cleaning process outlined below to create the combined data u
 
 ### Data cleaning process for BLA data 
 The raw dataset, "BLAs_Formation_Data," is cleaned in four steps. 
- - First, ISO3 codes are assigned to origin and destination countries following World Bank standards.
+ - First, ISO3 codes are assigned to origin and destination countries following World Bank standards using the excel file "countries_match.xlsx" to ensures that the country spelling the BLA that, in some cases differ with the World Bank spelling does not prevent the merge.
  - Second, country names are harmonized to reflect historical changes, such as the breakup of Yugoslavia (now Serbia, Montenegro, Croatia, Slovenia, North Macedonia, and Bosnia and Herzegovina) and Czechoslovakia (now the Czech Republic and Slovakia).
  - Third, overseas territories are recoded as their metropolitan counterparts for consistency with migration data (e.g., Guam and Puerto Rico as the USA, Greenland as Denmark, and Guadeloupe as France). Territories linked to the Netherlands, the UK, and New Zealand are similarly adjusted.
  - The coding norms used for this process is identical to what was used for the Bilateral Migration data (see [Ozden et al, 2011](https://academic.oup.com/wber/article-abstract/25/1/12/1678242) for details on this).
