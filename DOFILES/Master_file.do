@@ -64,7 +64,7 @@ etime, start
 *------------------------------------------------------------------------------*
 *						2.0 - Main analysis (Benchmark)		        		   *
 *------------------------------------------------------------------------------*
-
+		run "$CODE\Header.do" // reload the dataset for reformatting purposes
 		do "$CODE\Main_analysis.do"
 
 /*========= Main_analysis.do creates:
