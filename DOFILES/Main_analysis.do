@@ -3,6 +3,7 @@
 *					2.0 - Main analysis 									   *
 *------------------------------------------------------------------------------*
 label var dum_BLAs_10 "BLA"
+gen amig = asinh(mig)
 gen sample1 = 1 
 gen sample2 = minmig>9 if !mi(minmig)
 gen sample3 = pct>1
