@@ -34,7 +34,7 @@ gl FIG 					"$PATH\FIG"
 			Required packages
  =========================================== */
 
-local pkg "estout esttab estpost reghdfe ivreghdfe ppmlhdfe jwdid hdfe ftools ivreg2 ivreghdfe etime coefplot wbopendata"
+local pkg "estout esttab estpost reghdfe ivreghdfe ppmlhdfe jwdid hdfe ftools ivreg2 ranktest ivreghdfe etime coefplot wbopendata"
 foreach pk of local pkg{
 	cap which `pk'
 	if _rc !=0 ssc install `pk'
@@ -78,7 +78,7 @@ etime, start
 *						3.0 - Heterogeneity analysis    	        		   *
 *------------------------------------------------------------------------------*
 
-		run "$CODE\Heterogeneity_analysis.do"
+		do "$CODE\Heterogeneity_analysis.do"
 
 /*========= Heterogeneity_analysis.do creates:
 
@@ -91,7 +91,7 @@ etime, start
 *						4.0 - Event-study design	    	        		   *
 *------------------------------------------------------------------------------*
 		run "$CODE\Header.do" // reload the dataset for reformatting purposes
-		run "$CODE\Event_study.do"
+		do "$CODE\Event_study.do"
 
 /*========= Event_study.do creates:
 
@@ -102,7 +102,7 @@ etime, start
 *						5.0 - Robustness: Heterogeneity-robust DiD     		   *
 *------------------------------------------------------------------------------*
 		run "$CODE\Header.do" // reload the dataset for reformatting purposes
-		run "$CODE\Heterogeneity_robust_DiD.do"		
+		do "$CODE\Heterogeneity_robust_DiD.do"		
 		
 /*========= Heterogeneity_robust_DiD.do creates:
 
@@ -116,7 +116,7 @@ etime, start
 *						6.0 - Welfare calculations for section 5				     		   *
 *------------------------------------------------------------------------------*
 
-		run "$CODE\welfare calculations.do" // this code produces the descriptives statistics needed to perform the welfare calculations presented in Section 5 of the paper. These results should be manually put in the excel file "welfare calculations.xlsx" to perform the welfare calculations
+		do "$CODE\welfare calculations.do" // this code produces the descriptives statistics needed to perform the welfare calculations presented in Section 5 of the paper. These results should be manually put in the excel file "welfare calculations.xlsx" to perform the welfare calculations
 
 *------------------------------------------------------------------------------*
 *				7.0 - Figures A-1 to A-6 of Appendix A         *
