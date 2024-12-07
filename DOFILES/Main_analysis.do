@@ -7,7 +7,7 @@ label var dum_BLAs_10 "BLA"
 gen sample1 = 1 
 gen sample2 = minmig>9 if !mi(minmig)
 gen sample3 = pct>1
-gen amig = asinh(mig)
+
 *==================================== 
 * 					2.1 - Benchmark estimation (Migration response to BLAs (Tab. 2))    	          
 *==================================== 
