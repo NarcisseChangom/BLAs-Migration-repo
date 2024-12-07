@@ -44,20 +44,7 @@ foreach pk of local pkg{
 etime, start
 
 *------------------------------------------------------------------------------*
-*				0.a - Figures A-1 to A-6 of Appendix A         *
-*------------------------------------------------------------------------------*
-		run "$CODE\Appendix_A.do" // This exercise is done at the initial stage because it directly builds on rawdata prior formating 
-/*========= Appendix_A.do creates:
-
-	a.1- Figure A.1 
-	a.2- Figure A.2
-	a.3- Figure A.3
-	a.4- Figure A.4
-	a.5- Figure A.5
-	a.6- Figure A.6
- ==========*/
-*------------------------------------------------------------------------------*
-*				0.b - Load the data and create necessary indicators and groups *
+*				0.0 - Load the data and create necessary indicators and groups *
 *------------------------------------------------------------------------------*
  
 		run "$CODE\Header.do" // Load the dataset and create high dimensional fixed effects and macros 
@@ -126,9 +113,23 @@ etime, start
  ==========*/		
 	
 *------------------------------------------------------------------------------*
-*						6.0 - Welfare calculations				     		   *
+*						6.0 - Welfare calculations for section 5				     		   *
 *------------------------------------------------------------------------------*
 
 		run "$CODE\welfare calculations.do" // this code produces the descriptives statistics needed to perform the welfare calculations presented in Section 5 of the paper. These results should be manually put in the excel file "welfare calculations.xlsx" to perform the welfare calculations
-		
+
+*------------------------------------------------------------------------------*
+*				7.0 - Figures A-1 to A-6 of Appendix A         *
+*------------------------------------------------------------------------------*
+		run "$CODE\Appendix_A.do" // This exercise is done at the initial stage because it directly builds on rawdata prior formating 
+/*========= Appendix_A.do creates:
+
+	a.1- Figure A.1 
+	a.2- Figure A.2
+	a.3- Figure A.3
+	a.4- Figure A.4
+	a.5- Figure A.5
+	a.6- Figure A.6
+ ==========*/
+
 etime // display the time duration of the program 
