@@ -19,7 +19,7 @@ clear all
 global UPI = c(username)
 
 *Set directory
-gl PATH "C:\Users\WB352657\OneDrive - WBG\Research\BLA migration\replication PRWP"
+gl PATH "PUT THE DIRECTORY REFERENCE TO THE LOCATION WHERE THE FOLDERS ARE STORED"
 cd "$PATH"
 
 
