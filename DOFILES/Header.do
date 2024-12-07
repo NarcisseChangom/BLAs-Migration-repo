@@ -3,6 +3,7 @@
 *				1.0 - Load the data and create necessary indicators and groups *
 *------------------------------------------------------------------------------*
 use "$DATA\BLA_Migration_data", clear 
+		g amig = asinh(mig)
 		lab var dum_BLAs_10 "Bilateral labor agreement (BLA)"
 
 
