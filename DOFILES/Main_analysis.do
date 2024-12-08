@@ -92,7 +92,6 @@ estout ppml3_1 ppml3_2 ppml3_3 using "$REGOUT\Table_B3.tex", replace style(tex) 
 	   
 	   
 	   
-/* More time needed to properly build the layout of table 3*/	   
 *==================================== 
 * 			2.2 - IV estimation     	          
 *==================================== 
