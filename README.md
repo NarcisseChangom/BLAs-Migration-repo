@@ -99,6 +99,6 @@ The combined data used for most of the analysis in the paper, "BLA_Migration_dat
   **Software**: 
   STATA MP 18.0
 
-  **Runtime**: around 10 minutes.
+  **Runtime**: 8 to 10 minutes.
 
 
