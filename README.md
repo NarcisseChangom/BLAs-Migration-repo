@@ -22,7 +22,7 @@ For consistency, we classify the country with the lower GDP per capita as the "o
 Migration stock data for 1960, 1970, 1980, 1990, and 2000 are sourced from the World Bank (2022), while data for 2010 and 2020 are drawn from UNDESA (2020), which employs a similar methodology. They use information collated from censuses and surveys at destination and origin countries to construct a matrix of bilateral migration stock data from each of the origin countries to each potential destination country. 
 
 ### Analysis data
-The combined data used for analysis in the paper is provided with this repository under the folder "DATA". 
+The combined data used for most of the analysis in the paper, "BLA_Migration_data.dta", is provided with this repository under the folder "DATA". 
 
    
 ## 2.	Instructions for Replication
