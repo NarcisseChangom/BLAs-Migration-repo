@@ -40,7 +40,7 @@ The combined data used for most of the analysis in the paper, "BLA_Migration_dat
   
 ### ii. Set directory reference and install user-written packages 
 * Open "Master_file.do" and change the directory path in line 22 to be the corresponding location in your computer where you store the “Replication File BLA-Migration” folder.
-* Ensure all the user written Stata Packages needed for the analysis are installed and are up to date. The file "master_file.do" automatically checks and installs all required user-written commands from SSC that are not installed in your machine. Note that some of the user-written packages are not automatically updated in SSC. If you run into any issues with the SSC versions of these commands, you may want to install the latest stable version from the author's website.  
+* Ensure all the user written Stata Packages needed for the analysis are installed and are up to date. The file "master_file.do" automatically checks and installs all required user-written commands from SSC that are not installed in your machine. Note that some of the user-written packages are not automatically updated to the latest version in SSC (e.g., ivreghdfe). If you run into any issues with the SSC versions of these commands, you may want to install the latest stable version that is actively maintained by the authors.  
 
 
 ### iii.	Execute the "Master_file.do"
