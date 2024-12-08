@@ -45,14 +45,14 @@ The combined data used for analysis in the paper is provided with this repositor
 
 ### iii.	Execute the "Master_file.do"
 * Run the “Master_file.do” in Stata that will replicate all tables and figures in the paper. The file will in turn call the following do-files:
-  - “Appendix_A.do” to: creates Figures in appendix A (Figure A.1-A.6) from rawdata a) "BLAs_Formation_Data" and b) "BLAs_Coding_Data"
   - “Header.do” to: Load the analysis dataset and create high dimensional fixed effects and macros.
   - “Descriptives_Tab1_Tab_B1.do.do” to: Create Table 1 and Table B.1.
   - “Main_analysis.do” to: Create Table 2, Table B.2, Table B.3 and Table 3.
   - “Heterogeneity_analysis.do” to: Create Table 4, Table 5, Table B.4, Table B.5, and Table B.6.
   - “Event_study.do” to: Create Figure 1 and Figure 2 (panels Figure_2A and Figure_2B).
   - “Heterogeneity_robust_DiD.do” to: Create Table C.1, Figure C.1, Figure C.2, Figure C.3 (panels Figure_C3A, Figure_C3B, Figure_C3C, and Figure_C3D)
-  - “welfare calculations.do” to produce the necessary descriptive statistics for welfare numbers reported in the section 5 of the paper. 
+  - “welfare calculations.do” to produce the necessary descriptive statistics for welfare numbers reported in the section 5 of the paper.
+  - “Appendix_A.do” to: creates Figures in appendix A (Figure A.1-A.6) using raw data "BLAs_Formation_Data.dta" and "BLAs_Coding_Data.dta" provided in "DATA" folder. 
 
 
 ## 3.	Output 
