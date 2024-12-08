@@ -124,12 +124,12 @@ etime, start
 		run "$CODE\Appendix_A.do" // This exercise is done at the initial stage because it directly builds on rawdata prior formating 
 /*========= Appendix_A.do creates:
 
-	a.1- Figure A.1 
-	a.2- Figure A.2
-	a.3- Figure A.3
-	a.4- Figure A.4
-	a.5- Figure A.5
-	a.6- Figure A.6
+	7.1- Figure A.1 
+	7.2- Figure A.2
+	7.3- Figure A.3
+	7.4- Figure A.4
+	7.5- Figure A.5
+	7.6- Figure A.6
  ==========*/
 
 etime // display the time duration of the program 
