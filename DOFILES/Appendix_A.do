@@ -245,24 +245,18 @@ replace yearsig = 1997 if yearsig == 2997 // I guess that this is a typo
 gen dumBLA = (yearsig !=.)
 
 preserve 
-collapse (rawsum) dumBLA, by(d_iso3 yearsig)
-drop if yearsig==. 
-gen id = 1
-bys d_iso3 (yearsig): gen Cumul_BLAs = sum(dumBLA)
-sort yearsig d_iso3 
-bys id (yearsig): gen Tot_BLAs = sum(dumBLA)
-encode d_iso3, gen(isod)
-tsset isod yearsig
-collapse (first) Tot_BLAs, by (yearsig)
+collapse (sum) dumBLA, by(yearsig)
+drop if mi(yearsig)
+sort yearsig
+gen Tot_BLAs = sum(dumBLA)
 
 tw line Tot_BLAs yearsig, xli(1945 1973 1990) xla(1920(10)2020) yla(0(200)1200) ///
 	   text(605 1945 "Post WW-II" "(Post war reconstruction)", place(e) size(.3cm)) ///
 	   text(605 1975 "Eco. stagnation" "(in Europe)", place(e) size(.3cm)) ///
 	   text(605 2000 "New BLA's Golden age" "(post- Cold War)", place(e) size(.3cm)) ///
-	   xti("BLA's signing year") yti("Cumulative number of BLAs")
+	   xti("BLA's signing year") yti("Cumulative number of BLAs") name(a, replace)
 graph export "$FIG\Figure_A1.png", replace 
 restore 
-
 
 merge n:1 d_iso3 using `d_reg' 
 keep if _m==3 
@@ -501,4 +495,3 @@ graph bar (mean) ilo0 ilo1, over(ilocode, label(labsize(vsmall)) axis(outergap(*
 graph export  "$FIG/Figure_appendixA6_afr.png", replace 
 
 restore 
-
