@@ -249,6 +249,7 @@ collapse (rawsum) dumBLA, by(d_iso3 yearsig)
 drop if yearsig==. 
 gen id = 1
 bys d_iso3 (yearsig): gen Cumul_BLAs = sum(dumBLA)
+sort yearsig d_iso3 
 bys id (yearsig): gen Tot_BLAs = sum(dumBLA)
 encode d_iso3, gen(isod)
 tsset isod yearsig
