@@ -26,6 +26,12 @@ use "$DATA\BLA_Migration_data", clear
 		lab values gee_4 gee_4
 		 
 ** Instrument (Leave one out)
+replace BLAs_signed = 0 if mi(BLAs_signed)
+cap drop leave_out leave_in 
+egen leave_out = sum(BLAs_signed), by(d_iso3 year)
+egen leave_in = sum(BLAs_signed), by(o_iso3 year)
+replace leave_out = leave_out-BLAs_signed
+replace leave_in = leave_in - BLAs_signed
 
 	g ln_leave_out = asinh(leave_out) 
 	g ln_leave_in = asinh(leave_in)
