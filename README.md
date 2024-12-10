@@ -24,7 +24,7 @@ Migration stock data for 1960, 1970, 1980, 1990, and 2000 are sourced from the W
 ### Analysis data
 The combined data used for most of the analysis in the paper, "BLA_Migration_data.dta", is provided with this repository under the folder "DATA". 
 
-In addition to the migration and BLA variables from the above mentioned datasets, the data also includes the government effectiveness score, ```gee```, from the Worldwide Governance Indicators, 2023 Update. Full documentation and access to the aggregate governance indicators,  and the underlying source data, is available at [www.govindicators.org](www.govindicators.org). Source: Daniel Kaufmann, Aart Kraay and Massimo Mastruzzi (2010). "The Worldwide Governance Indicators : A Summary of Methodology, Data and Analytical Issues". World Bank Policy Research Working Paper No. 5430, http://papers.ssrn.com/sol3/papers.cfm?abstract_id=1682130
+- In addition to the migration and BLA variables from the above mentioned datasets, the data also includes the government effectiveness score, ```gee```, from the Worldwide Governance Indicators, 2023 Update. Full documentation and access to the aggregate governance indicators,  and the underlying source data, is available at [www.govindicators.org](www.govindicators.org). Source: Daniel Kaufmann, Aart Kraay and Massimo Mastruzzi (2010). "The Worldwide Governance Indicators : A Summary of Methodology, Data and Analytical Issues". World Bank Policy Research Working Paper No. 5430, http://papers.ssrn.com/sol3/papers.cfm?abstract_id=1682130
 
    
 ## 2.	Instructions for Replication
