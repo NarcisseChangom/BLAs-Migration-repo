@@ -6,7 +6,6 @@ g mpos = (mig>0)
 egen BLA = max(dum_BLAs_10), by(o_iso3 d_iso3)
 gen BLAreg = BLA if regular==1 
 
-replace devcat = 2 if devcat==.
 
 forval i = 1960(10)2020{
 	gen mig`i' = mig/1000000 if year==`i'
