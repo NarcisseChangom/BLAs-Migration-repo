@@ -6,7 +6,9 @@ use "$DATA\BLA_Migration_data", clear
 		lab var dum_BLAs_10 "Bilateral labor agreement (BLA)"
 
 
-** Tiles based of governance indicators 
+replace devcat = 2 if devcat==.
+
+** x-tiles based of governance indicators 
 		bys o_iso3 (d_iso3 year): gen __x = _n
 
 		xtile __gee_2 = gee if __x ==1, nq(2)
