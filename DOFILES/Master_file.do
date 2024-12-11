@@ -1,7 +1,7 @@
 /* =============================================================================
-Project				: 	Do bilateral labor agreements increase migration?
+Paper				: 	Do bilateral labor agreements increase migration?
 						Global evidence from 1960 to 2020 
-File purpose		:   Master do file documenting the work/files/paths
+File purpose		:   Master do file do reproduce all tables and figures for the paper
 
 Authors				: 	Samik Adhikari (sadhikari2@worldbank.org)
 					:   Narcisse Cha'ngom (chanarcisse@yahoo.fr / nchangom@worldbank.org)
